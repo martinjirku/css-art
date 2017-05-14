@@ -1,0 +1,65 @@
+#cryan {
+  width: 240px;
+  height: 24px;
+  position: relative;
+  margin-left: 30px;
+  background: #237449;
+                    /*ellipse printed on wrapper*/
+  background-image: radial-gradient(ellipse at top,
+                        rgba(0, 0, 0, 0.6) 50px,
+                        transparent 54px),
+                    /* crayon body shading */
+                    linear-gradient(
+                        to bottom,
+                        transparent 62%,
+                        rgba(0, 0, 0, 0.3) 100%),
+                    /* stripes on wrapper*/
+                    linear-gradient(to right,
+                        transparent 25px,
+                        rgba(0,0,0,0.6) 25px,
+                        rgba(0,0,0,0.6) 29px,
+                        transparent 29px,
+                        transparent 33px,
+                        rgba(0,0,0,0.6) 33px,
+                        rgba(0,0,0,0.6) 37px,
+                        transparent 37px,
+                        transparent 206px,
+                        rgba(0,0,0,0.6) 206px,
+                        rgba(0,0,0,0.6) 209px,
+                        transparent 210px,
+                        transparent 215px,
+                        rgba(0,0,0,0.6) 215px,
+                        rgba(0,0,0,0.6) 219px,
+                        transparent 219px
+                        ),
+                    /* wrapper*/
+                    linear-gradient(
+                        to right,
+                        transparent 10px,
+                        rgba(41,237,133,0.6) 10px,
+                        rgba(41,237,133,0.6) 230px,
+                        transparent 230px);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#cryan:before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 2px;
+  height: 5px;
+  border-right: 32px solid #237449;
+  border-bottom: 7px solid transparent;
+  border-top: 7px solid transparent;
+}
+
+#cryan:after {
+  content: "green";
+
+  position: absolute;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  right: 40px;
+  top: 8px;
+}
